@@ -1,1 +1,109 @@
-/* Write your CSS code here */
+.login-page-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page-inner-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px;
+}
+
+.login-page-image {
+  width: 35vw;
+  height: 50vh;
+}
+
+.login-form-container {
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px #475569;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  padding: 15px;
+}
+
+.login-page-logo {
+  height: 65px;
+  width: 50%;
+}
+
+.form-con-image {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 10px;
+}
+
+.label-text {
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.input-login {
+  width: 100%;
+  background-color: #e2e8f0;
+  border-style: none;
+  height: 35px;
+}
+
+.login-submit-btn {
+  background-color: #0b69ff;
+  height: 35px;
+  margin-top: 25px;
+  width: 100%;
+  border-style: none;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.error-message {
+  color: #ff0b37;
+  font-size: 12px;
+  font-family: roboto;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .login-page-inner-container {
+    display: unset;
+    margin: unset;
+    width: 100%;
+  }
+
+  .login-page-image {
+    display: none;
+  }
+
+  .login-form-container {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: unset;
+    margin: unset;
+    width: unset;
+  }
+
+  .form-con-image {
+    height: 250px;
+    width: 70vw;
+    margin-top: 30px;
+    display: unset;
+  }
+}
